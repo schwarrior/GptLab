@@ -48,6 +48,28 @@ dotnet add package Microsoft.SemanticKernel
 dotnet add package Microsoft.SemanticKernel.Connectors.OpenAI
 ```
 
+Code for program.cs given.
+
+Instructions for safe storage of API Key given.
+
+```bash
+dotnet user-secrets init
+dotnet user-secrets set "OpenAI:ApiKey" "sk-xxxxxxxx"
+dotnet add package Microsoft.Extensions.Configuration
+dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+```
+
+```c#
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration.UserSecrets;
+
+var config = new ConfigurationBuilder()
+    .AddUserSecrets<Program>()
+    .Build();
+
+var apiKey = config["OpenAI:ApiKey"];
+Console.WriteLine(apiKey)
+```
 
 # ChatGPT Dialog - for later
 
