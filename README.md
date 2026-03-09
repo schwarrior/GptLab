@@ -21,6 +21,12 @@ A laboratory for interacting with ChatGPT via API with Retrieval-Augmented Gener
 [Schwarrior GPT Lab](https://github.com/schwarrior/GptLab.git)
 
 
+# GPT API Access Management
+
+https://platform.openai.com/
+https://platform.openai.com/settings/organization/billing/overview/
+
+
 # ChatGPT Dialog
 
 3/4/2026
